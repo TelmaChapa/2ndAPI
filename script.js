@@ -29,19 +29,19 @@ function displayartCollection(artwork) {
     console.log(piece);
     // Find an anchor point using querySelector like you did in line 27 of adventure time
     //let div= document.querySelector('.painting')
+    let img = document.createElement('img');
+    img.src = artwork.artObjects[randomNum].webImage.url;
+    Rembrandt.appendChild(img);
+    img.setAttribute("class", "card-img-top")
     let para = document.createElement('p');
     para.innerText = piece;
     Rembrandt.appendChild(para);
     para.setAttribute("class", "name")
-    let img = document.createElement('img');
-    img.src = artwork.artObjects[randomNum].webImage.url;
-    Rembrandt.appendChild(img);
-    img.setAttribute("class", "display")
 
     
 
-    para.innerText = artwork.artObjects[randomNum].longTitle ?? "No Artist Title"
-    img.src = artwork.artObject[randomNum].webImage.url ?? "Image Not Available"
+    //para.innerText = artwork.artObjects[randomNum].longTitle ?? "No Artist Title"
+    //img.src = artwork.artObject[randomNum].webImage.url ?? "Image Not Available"
     }
 
     // create a p tag

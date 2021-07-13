@@ -1,0 +1,24 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+h1 {
+    font-family:Alegreya;
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
+
+img {
+    width: 400px;
+}
+
+.card {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
